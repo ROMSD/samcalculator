@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMCALC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <!-- Header -->
+        <div class="calculator-header">
+            <div>
+                <h1>SAMCALC</h1>
+                <span>Advanced Calculator</span>
+            </div>
+
+            <button id="modeBtn" class="mode-btn">DEG</button>
+        </div>
+
+        <!-- Display -->
+        <div class="display-container">
+
+            <div id="historyDisplay" class="history-display"></div>
+
+            <div id="expressionDisplay" class="expression-display">
+                0
+            </div>
+
+            <div id="resultDisplay" class="result-display">
+                0
+            </div>
+
+        </div>
+
+        <!-- Memory -->
+        <div class="memory-row">
+
+            <button data-memory="mc">MC</button>
+            <button data-memory="mr">MR</button>
+            <button data-memory="mplus">M+</button>
+            <button data-memory="mminus">M−</button>
+
+        </div>
+
+        <!-- Scientific Functions -->
+        <div class="scientific-grid">
+
+            <button data-action="sin">sin</button>
+            <button data-action="cos">cos</button>
+            <button data-action="tan">tan</button>
+            <button data-action="asin">sin⁻¹</button>
+            <button data-action="acos">cos⁻¹</button>
+            <button data-action="atan">tan⁻¹</button>
+
+            <button data-action="log">log</button>
+            <button data-action="ln">ln</button>
+            <button data-action="sqrt">√</button>
+            <button data-action="square">x²</button>
+            <button data-action="cube">x³</button>
+            <button data-action="factorial">x!</button>
+
+        </div>
+
+        <!-- Main Calculator -->
+        <div class="calculator-grid">
+
+            <button class="function" data-action="clear">AC</button>
+            <button class="function" data-action="delete">DEL</button>
+            <button class="function" data-value="(">(</button>
+            <button class="function" data-value=")">)</button>
+            <button class="operator" data-value="/">÷</button>
+
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button class="operator" data-value="*">×</button>
+            <button class="operator" data-value="^">xʸ</button>
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button class="operator" data-value="-">−</button>
+            <button data-action="reciprocal">1/x</button>
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button class="operator" data-value="+">+</button>
+            <button data-value="%">%</button>
+
+            <button data-value="0" class="zero">0</button>
+            <button data-value=".">.</button>
+            <button data-value="π">π</button>
+            <button data-value="e">e</button>
+            <button class="equals" data-action="calculate">=</button>
+
+        </div>
+
+        <!-- History -->
+        <div class="history-section">
+
+            <div class="history-title">
+                <span>History</span>
+                <button id="clearHistoryBtn">Clear</button>
+            </div>
+
+            <div id="historyList" class="history-list">
+                <p class="empty-history">No calculations yet</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
